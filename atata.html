@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  
+</head>
+<body>
+  
+</body>
+<script>
+function atatata(n){
+	if (n != 60) {
+	var pos = [Math.random()*90,Math.random()*90]
+	var color = Math.floor(Math.random()*999999);
+	var color2 = 1000000 - color;
+	var testo = `<h2 style='position:absolute;top:${pos[0]}vh;left:${pos[1]}vw;color:#${color};background-color:#${color2};padding:30px;'>OA MEEEEE!!!!!</h2>`
+	document.write(testo)
+	setTimeout(function(){atatata(n+1)},300);
+	}
+}
+atatata(1);
+</script>
+</html>
